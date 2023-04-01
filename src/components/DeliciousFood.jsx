@@ -1,13 +1,11 @@
 import { useState } from 'react';
 
-export default function DeliciousFood() {
-  const [color, setColor] = useState('green');
-
+export default function DeliciousFood({ color, setColor }) {
   return (
     <div className="mt-60 grid grid-cols-2">
       <div>
         <p
-          className={`text-[48px] ${
+          className={`fade-in text-[48px] ${
             color === 'green' ? 'text-[#5CAC0E]' : 'text-[#FEA150]'
           } font-medium `}
         >
@@ -20,7 +18,7 @@ export default function DeliciousFood() {
           mauris. Sollicitudin ultrices enim quam.
         </p>
         <button
-          className={`w-[163px] h-[50px] rounded-[48px] text-white mt-[33px] text-sm font-bold ${
+          className={`fade-in w-[163px] h-[50px] rounded-[48px] text-white mt-[33px] text-sm font-bold ${
             color === 'green' ? 'bg-[#5CAC0E]' : 'bg-[#FEA150]'
           }`}
         >
@@ -52,12 +50,12 @@ export default function DeliciousFood() {
         <img
           src="/food-image-1.png"
           alt=""
-          className={` ${color === 'green' ? '' : 'hidden'}`}
+          className={`zoom-in ${color === 'green' ? '' : 'hidden'}`}
         />
         <img
           src="/food-image-2.png"
           alt=""
-          className={` ${color === 'green' ? 'hidden' : ''}`}
+          className={`zoom-in ${color === 'green' ? 'hidden' : ''}`}
         />
         <button
           onClick={() => setColor('orange')}
