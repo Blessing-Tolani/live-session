@@ -43,21 +43,30 @@ function App() {
         </svg>
         <img
           src={`${color === 'green' ? '/food-1.png' : '/food-2.png'}`}
+          alt=""
           className="absolute -bottom-2 left-72"
         />
         <img
           src={`${color === 'green' ? '/food-2.png' : '/food-3.png'}`}
+          alt=""
           className="absolute bottom-[140px] left-[380px]"
         />
         <img
           src={`${color === 'green' ? '/food-3.png' : '/food-4.png'}`}
+          alt=""
           className="absolute bottom-[210px] left-[540px]"
         />
         <img
           src={`${color === 'green' ? '/food-4.png' : '/food-5.png'}`}
+          alt=""
+          s
           className="absolute bottom-[140px] right-[200px]"
         />
-        <img src="/food-5.png" className="absolute bottom-0.5 right-24" />
+        <img
+          src="/food-5.png"
+          className="absolute bottom-0.5 right-24"
+          alt=""
+        />
       </div>
     </section>
   );
