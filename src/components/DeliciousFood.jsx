@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 export default function DeliciousFood({ color, setColor }) {
   return (
     <div className="mt-60 grid grid-cols-2">
