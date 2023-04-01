@@ -5,13 +5,7 @@ import NavBar from './components/NavBar';
 
 function App() {
   const [color, setColor] = useState('green');
-  const foodPlateImageSrc = [
-    '/food-1.png',
-    '/food-2.png',
-    '/food-3.png',
-    '/food-4.png',
-    '/food-5.png',
-  ];
+
   return (
     <section className="px-[9rem]  relative">
       <NavBar />
